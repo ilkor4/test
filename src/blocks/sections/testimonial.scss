@@ -1,0 +1,22 @@
+.testimonial {
+  padding: 0 0 100px;
+  box-sizing: border-box;
+  max-width: $max_width_section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background: $gradient_linear;
+
+  &__section-heading {
+    margin-bottom: 20px;
+    max-width: $max_width_heading_testimonial;
+    gap: 24px;
+  }
+}
+
+@media screen and (width < $breakpoint_desktop_wide) {
+  .testimonial {
+    padding: 50px $base_padding;
+  }
+}

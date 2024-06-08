@@ -1,0 +1,111 @@
+.button {
+  @include clear-button;
+
+  padding: 12px 24px;
+  width: max-content;
+  height: min-content;
+  font: $font_regular_600;
+  color: $color_gray_white;
+  background-color: $color_primary_500;
+  border-radius: 4px;
+  transition: background $base_transition;
+
+  &_type_link {
+    @include clear-link;
+
+    display: flex;
+  }
+
+  &_type_download {
+    padding: 11px 24px;
+    background-color: $color_gray_white;
+    color: $color_primary_500;
+    border: 1px solid $color_primary_500;
+  }
+
+  &_type_download::before {
+    content: '';
+    margin-right: 6px;
+    width: $width_button_icon;
+    height: $height_button_icon;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url("./../images/icons/button-icons/dowload-icon.svg");
+    background-size: $width_button_icon $height_button_icon;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &_type_arrow {
+    padding: 11px 24px;
+    background-color: $color_gray_white;
+    color: $color_primary_500;
+    border: 1px solid $color_primary_500;
+  }
+
+  &_type_arrow::after {
+    content: '';
+    margin-left: 10px;
+    width: $width_button_icon;
+    height: $height_button_icon;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url("./../images/icons/button-icons/arrow-icon.svg");
+    background-size: $width_button_icon $height_button_icon;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &_type_inverted-arrow::after {
+    content: '';
+    margin-left: 10px;
+    width: $width_button_icon;
+    height: $height_button_icon;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url("./../images/icons/button-icons/arrow-icon-light.svg");
+    background-size: $width_button_icon $height_button_icon ;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &_type_submit::after {
+    content: '';
+    margin-left: 9px;
+    width: $width_button_icon;
+    height: $height_button_icon;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url("./../images/icons/button-icons/big-arrow-icon.svg");
+    background-size: $width_button_arrow_icon $height_button_arrow_icon;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &_disabled {
+    opacity: $base_opacity;
+    background-color: $color_gray_400;
+    cursor: none;
+  }
+
+  &:hover {
+    background-color: $color_primary_600;
+  }
+
+  &_type_arrow:hover {
+    background-color: $color_gray_white;
+    color: $color_primary_600;
+    border: 1px solid $color_primary_600;
+  }
+
+  &_type_download:hover {
+    background-color: $color_gray_white;
+    color: $color_primary_600;
+    border: 1px solid $color_primary_600;
+  }
+
+  &_disabled:hover {
+    background-color: $color_gray_400;
+  }
+
+}

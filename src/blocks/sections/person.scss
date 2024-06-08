@@ -1,0 +1,35 @@
+.person {
+  padding: 150px 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $color_gray_50;
+
+  &__container {
+    max-width: $max_width_section;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10%
+  }
+
+  &__description {
+    gap: 24px;
+  }
+}
+
+@media screen and (width < $breakpoint_desktop_wide) {
+  .person {
+    padding: 50px $base_padding;
+  }
+}
+
+@media screen and (width < $breakpoint_tablet) {
+  .person {
+    &__container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}

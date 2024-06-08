@@ -1,0 +1,15 @@
+.slider-button {
+  @include clear-button;
+
+  width: $width_slider_button;
+  height: $height_slider_button;
+  background-color: $color_gray_200;
+  border-radius: 100%;
+  transition: $base_transition;
+
+  &_active {
+    width: $width_slider_button_active;
+    background-color: $color_gray_900;
+    border-radius: 100px;
+  }
+}

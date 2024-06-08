@@ -1,0 +1,56 @@
+.contacts-card {
+  padding: 24px;
+  box-sizing: border-box;
+  width: $width_contacts_card;
+  display: flex;
+  gap: 13px;
+  background-color: $color_gray_white;
+  border-radius: 10px;
+  transition: box-shadow $base_transition;
+
+  &__icon {
+    width: $width_contact_icon;
+    height: $height_contact_icon;
+    background-color: $color_primary_100_rgba;
+    background-image: url("./../images/icons/location-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-image $base_transition, background-color $base_transition;
+    border-radius: 4px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__subtitle {
+    @include clear-paragraph;
+
+    font: $font_small_400;
+    color: $color_gray_700;
+  }
+
+  &__title {
+    @include clear-paragraph;
+
+    font: $font_regular_500;
+    color: $color_gray_900;
+  }
+
+  &:hover {
+    box-shadow: $contacts_box_shadow;
+  }
+
+  &:hover &__icon {
+    background-color: $color_primary_500;
+    background-image: url("./../images/icons/location-icon-light.svg");
+  }
+}
+
+@media screen and (width < $breakpoint_mobile) {
+  .contacts-card {
+    width: 100%;
+  }
+}

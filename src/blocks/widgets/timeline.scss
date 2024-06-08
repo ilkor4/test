@@ -1,0 +1,28 @@
+.timeline {
+  @include clear-list;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media screen and (width < $breakpoint_desktop) {
+  .timeline {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (width < $breakpoint_tablet) {
+  .timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width < $breakpoint_mobile) {
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Ilya Korneliuk",
+  "main": "index.js",
+  "engines": {
+    "npm": ">=18.0.0"
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "build:dev": "webpack --env mode=development",
+    "build:prod": "webpack --env mode=production",
+    "start": "webpack serve --env port=3000",
+    "lint:markup": "html-validator",
+    "lint:html": "linthtml \"src/*.html\" --config .linthtmlrc",
+    "lint:scss": "stylelint \"**/*.scss\"",
+    "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
+    "lint:js": "eslint \"**/*.js\"",
+    "lint:js:fix": "eslint \"**/*.js\" --fix",
+    "lint": "npm run lint:html && npm run lint:scss && npm run lint:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.6",
+    "@types/webpack-dev-server": "^4.7.2",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "linthtml-config-htmlacademy": "^1.0.19",
+    "mini-css-extract-plugin": "^2.8.1",
+    "sass": "^1.72.0",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2",
+    "w3c-html-validator": "^1.7.0",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.3"
+  },
+  "dependencies": {
+    "css-loader": "^6.10.0",
+    "file-loader": "^6.2.0"
+  }
+}

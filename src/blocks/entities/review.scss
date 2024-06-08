@@ -1,0 +1,48 @@
+.review {
+  max-width: $max_width_review;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  opacity: 0;
+
+  &_active {
+    @starting-style {
+      opacity: 0;
+    }
+
+    display: flex;
+    opacity: 1;
+    transition: allow-discrete 1s;
+  }
+
+  &__cite {
+    margin: 0;
+  }
+
+  &__text {
+    @include clear-paragraph;
+
+    margin-bottom: 16px;
+    font: $font_large_500;
+    color: $color_gray_800;
+  }
+
+  &__title {
+    @include clear-paragraph;
+
+    font: $font_large_500;
+    line-height: 26px;
+    color: $color_black;
+  }
+
+  &__subtitle {
+    @include clear-paragraph;
+
+    font: $font_regular_400;
+    color: $color_black;
+  }
+
+}

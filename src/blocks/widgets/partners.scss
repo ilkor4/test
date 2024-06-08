@@ -1,0 +1,50 @@
+.partners {
+  @include clear-list;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  &__item {
+    place-self: center;
+    width: 100%;
+    max-width: $max_width_partner;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &__item_teta {
+    background-image: url("./../images/partners/teta-logo.png");
+  }
+
+  &__item_cakes {
+    max-width: $max_width_partner_circle;
+    background-image: url("./../images/partners/cakes-logo.png");
+  }
+
+  &__item_aperture {
+    background-image: url("./../images/partners/aperture-logo.svg");
+  }
+
+  &__item_dinamo {
+    max-width: $max_width_partner_circle;
+    background-image: url("./../images/partners/dinamo-logo.png");
+  }
+}
+
+@media screen and (width < $breakpoint_desktop) {
+  .partners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width < $breakpoint_mobile) {
+  .partners {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}

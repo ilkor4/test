@@ -1,0 +1,27 @@
+.section-title {
+  @include clear-paragraph;
+
+  color: $color_gray_900;
+  font: $font_heading_2;
+  font-weight: 600;
+
+  &_big {
+    font: $font_heading_1;
+    font-weight: 600;
+  }
+
+  &_inverted {
+    color: $color_gray_white;
+  }
+
+  &_person {
+    color: $color_link;
+  }
+}
+
+@media screen and (width < $breakpoint_mobile) {
+  .section-title {
+    font: $font_heading_3;
+    font-weight: 600;
+  }
+}

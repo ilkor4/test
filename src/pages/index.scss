@@ -1,0 +1,151 @@
+/* Подключил normalize */
+@import '../vendor/styles/normalize';
+
+/* Подключил шрифты */
+@import '../vendor/styles/fonts';
+
+/* Подключил глобальные переменные */
+@import '../vendor/styles/global';
+
+/* Подключил миксины */
+@import '../vendor/styles/mixins';
+
+/* Подключил шапку */
+@import '../blocks/sections/header';
+
+/* Подключил меню */
+@import '../blocks/widgets/menu';
+
+/* Подключил кнопку */
+@import '../blocks/ui/button';
+
+/* Подключил секцию обо мне */
+@import '../blocks/sections/about';
+
+/* Подключил описание */
+@import '../blocks/entities/description';
+
+/* Подключил текст секции */
+@import '../blocks/ui/section-text';
+
+/* Подключил преимущества */
+@import '../blocks/widgets/advantages';
+
+/* Подключил преимущество */
+@import '../blocks/entities/advantage';
+
+/* Подключил секцию обо описание */
+@import '../blocks/sections/lead';
+
+/* Подключил социальные сети */
+@import '../blocks/widgets/social';
+
+/* Подключил заголовок секции */
+@import '../blocks/ui/section-title';
+
+/* Подключил секцию процесс */
+@import '../blocks/sections/process';
+
+/* Подключил шаги */
+@import '../blocks/widgets/steps';
+
+/* Подключил шаг */
+@import '../blocks/entities/step';
+
+/* Подключил социальные сети */
+@import '../blocks/ui/section-heading';
+
+/* Подключил секцию портфолио */
+@import '../blocks/sections/portfolio';
+
+/* Подключил карточки */
+@import '../blocks/widgets/cards';
+
+/* Подключил карточку */
+@import '../blocks/entities/card';
+
+/* Подключил секцию идеи */
+@import '../blocks/sections/ideas';
+
+/* Подключил секцию блог */
+@import '../blocks/sections/blog';
+
+/* Подключил новости */
+@import '../blocks/widgets/timeline';
+
+/* Подключил новость */
+@import '../blocks/entities/news';
+
+/* Подключил кнопки слайдера */
+@import '../blocks/widgets/slider-buttons';
+
+/* Подключил кнопку слайдера */
+@import '../blocks/ui/slider-button';
+
+/* Подключил секцию персона */
+@import '../blocks/sections/person';
+
+/* Подключил умения */
+@import '../blocks/widgets/skills';
+
+/* Подключил умение */
+@import '../blocks/entities/skill';
+
+/* Подключил секцию клиенты */
+@import '../blocks/sections/clients';
+
+/* Подключил партнеров */
+@import '../blocks/widgets/partners';
+
+/* Подключил секцию рекомендации */
+@import '../blocks/sections/testimonial';
+
+/* Подключил отзывы */
+@import '../blocks/widgets/reviews';
+
+/* Подключил отзыв */
+@import '../blocks/entities/review';
+
+/* Подключил секцию контакты */
+@import '../blocks/sections/contacts';
+
+/* Подключил карточки контактов */
+@import '../blocks/widgets/contacts-cards';
+
+/* Подключил карточку-контакт */
+@import '../blocks/entities/contacts-card';
+
+/* Подключил форму */
+@import '../blocks/widgets/form';
+
+/* Подключил подвал */
+@import '../blocks/sections/footer';
+
+
+html {
+     scroll-behavior: smooth;
+}
+
+.page {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: $color_gray_white;
+}
+
+.content {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+}
+
+.background-wrapper {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background: $gradient_blue, $gradient_roze, $gradient_yellow;
+}

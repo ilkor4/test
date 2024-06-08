@@ -1,0 +1,153 @@
+/* Глобальные переменные шрифтов: */
+
+$font_family: "Montserrat", arial, sans-serif;
+
+$font_thin_400: 400 12px/16px $font_family;
+$font_thin_500: 500 12px/16px $font_family;
+$font_thin_600: 600 12px/16px $font_family;
+
+$font_small_400: 400 14px/20px $font_family;
+$font_small_500: 500 14px/20px $font_family;
+$font_small_600: 600 14px/20px $font_family;
+
+$font_regular_400: 400 16px/24px $font_family;
+$font_regular_500: 500 16px/24px $font_family;
+$font_regular_600: 600 16px/24px $font_family;
+
+$font_large_400: 400 18px/24px $font_family;
+$font_large_500: 500 18px/24px $font_family;
+$font_large_600: 600 18px/24px $font_family;
+
+/* Глобальные переменные шрифтов заголовков: */
+
+$font_heading_1: 48px/56px $font_family;
+$font_heading_2: 38px/50px $font_family;
+$font_heading_3: 32px/40px $font_family;
+$font_heading_4: 24px/24px $font_family;
+$font_heading_5: 20px/24px $font_family;
+$font_heading_h1: 600 72px/84px $font_family;
+
+/* Глобальные серые цвета: */
+
+$color_gray_white: #FFF;
+$color_gray_50: #F0F1F3;
+$color_gray_100: #E6E8EB;
+$color_gray_200: #C3C7CE;
+$color_gray_300: #A5ACB5;
+$color_gray_400: #87909D;
+$color_gray_500: #697484;
+$color_gray_600: #556070;
+$color_gray_700: #424E60;
+$color_gray_800: #2B384C;
+$color_gray_900: #132238;
+
+/* Глобальные основные цвета: */
+
+$color_primary_100: #EDD8FF;
+$color_primary_200: #DBB1FF;
+$color_primary_300: #C98BFF;
+$color_primary_400: #B764FF;
+$color_primary_500: #A53DFF;
+$color_primary_600: #8431CC;
+$color_primary_700: #632599;
+$color_primary_800: #421866;
+$color_primary_900: #210C33;
+
+/* Дополнительные цвета: */
+
+$color_primary_100_rgba: rgb(237 216 255 / 50%);
+$color_transparent: rgb(255 0 0 / 0%);
+$color_link: #333;
+$color_black: #000;
+
+/* Размеры: */
+
+/* Максимальная ширина элементов: */
+
+$max_width_section: 1320px;
+$max_width_advantages: 648px;
+$max_width_heading_portfolio: 577px;
+$max_width_heading_ideas: 621px;
+$max_width_heading_text_ideas: 581px;
+$max_width_heading_clients: 577px;
+$max_width_heading_testimonial: 577px;
+$max_width_heading_blog: 540px;
+$max_width_heading_contacts: 483px;
+$max_width_skills: 648px;
+$max_width_review: 872px;
+$max_width_partner: 200px;
+$max_width_partner_circle: 150px;
+
+/* Ширина элементов: */
+
+$width_advantage: 200px;
+$width_lead_image: 536px;
+$width_person_image: 424px;
+$width_social_icon: 48px;
+$width_burger_icon: 30px;
+$width_button_icon: 24px;
+$width_button_arrow_icon: 20px;
+$width_step: 248px;
+$width_step_icon: 72px;
+$width_slider_button: 8px;
+$width_slider_button_active: 30px;
+$width_partner_image: 200px;
+$width_contacts_card: 336px;
+$width_contact_icon: 48px;
+
+/* Высота элементов: */
+
+$height_social: 36px;
+$height_social_icon: 48px;
+$height_burger_icon: 30px;
+$height_button_icon: 24px;
+$height_button_arrow_icon: 20px;
+$height_translate_lead: 112px;
+$height_step_icon: 72px;
+$height_translate_step: 24px;
+$height_card_image: 248px;
+$height_news_image: 226px;
+$height_slider_button: 8px;
+$height_partner_image: 200px;
+$height_contact_icon: 48px;
+$height_translate_footer: 60px;
+$max_height_open_burger: 520px;
+
+/* Анимации и транзиции: */
+$base_transition: .6s ease;
+
+/* Прозрачность: */
+$base_opacity: .6;
+
+/* Тени: */
+
+$base_box_shadow: 0 24px 116px 0 rgb(43 56 76 / 9%);
+$social_box_shadow: 0 12px 64px 0 rgb(28 25 25 / 12%);
+$lead_box_shadow: 0 36px 105px 0 rgb(43 56 76 / 10%);
+$step_box_shadow: 32px 32px 124px 0 rgb(43 56 76 / 10%);
+$skill_box_shadow: 0 32px 96px 0 rgb(28 25 25 / 16%);
+$contacts_box_shadow: 0 59px 124px 0 rgb(0 0 0 / 12%);
+$contact_card_box_shadow: 0 12px 64px 0 rgb(28 25 25 / 12%);
+
+/* Z-индексы: */
+
+$z_contacts_container: 1;
+$z_menu_container: 5;
+
+/* Брейкпоинты: */
+$breakpoint_desktop_wide: 1440px;
+$breakpoint_desktop: 1200px;
+$breakpoint_tablet: 992px;
+$breakpoint_mobile: 576px;
+
+/* Отступы: */
+$base_padding: 5%;
+
+/* Градиенты */
+$gradient_roze: radial-gradient(circle at 90% -8%, rgb(218 77 241 / 40%), $color_transparent 20%);
+$gradient_blue: radial-gradient(circle at 100% 55% , rgb(196 245 233 / 70%), $color_transparent 30%);
+$gradient_yellow: radial-gradient(circle at 0% 120% , rgb(255 223 168), $color_transparent 25%);
+$gradient_pink_up: radial-gradient(circle at -5% 105% , rgb(218 77 241 / 40%), $color_transparent 10%);
+$gradient_pink_down: radial-gradient(circle at -10% -10% , rgb(218 77 241 / 40%), $color_transparent 25%);
+$gradient_green: radial-gradient(circle at 110% -10% , rgb(196 245 233 / 70%), $color_transparent 40%);
+$gradient_linear: radial-gradient(circle, rgba(255 234 198 / 2%) , rgb(255 234 198 / 14%) 50%, $color_transparent 80%);

@@ -1,0 +1,19 @@
+.ideas {
+  padding: 100px 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $color_gray_900;
+
+  &__section-heading {
+    max-width: $max_width_heading_ideas;
+    gap: 32px;
+  }
+}
+
+@media screen and (width < $breakpoint_desktop_wide) {
+  .ideas {
+    padding: 50px $base_padding 50px;
+  }
+}

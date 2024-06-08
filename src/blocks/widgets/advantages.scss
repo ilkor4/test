@@ -1,0 +1,22 @@
+.advantages{
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+
+  &__list {
+    @include clear-list;
+
+    width: 100%;
+    display: flex;
+    gap: 3px;
+  }
+}
+
+@media screen and (width < $breakpoint_tablet) {
+  .advantages {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

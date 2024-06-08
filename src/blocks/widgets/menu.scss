@@ -1,0 +1,99 @@
+.menu {
+  display: flex;
+
+  &__list {
+    @include clear-list;
+
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    @include clear-link;
+
+    padding: 12px 24px;
+    font: $font_regular_500;
+    color: $color_link;
+    transition: opacity $base_transition;
+  }
+
+  &__link_inverted {
+    padding: 12px;
+    font: $font_regular_400;
+    color: $color_gray_50;
+  }
+
+  &__link_clear {
+    padding: 0;
+    font: unset;
+    color: unset;
+    transition: unset;
+  }
+
+  &__link:hover {
+    opacity: $base_opacity;
+  }
+
+  &__link_clear:hover {
+    opacity: unset;
+  }
+
+  &__button-item {
+    display: none;
+  }
+
+  &__close-button {
+    @include clear-button;
+
+    margin: 20px 0;
+    box-sizing: border-box;
+    width: $width_button_icon;
+    height: $height_button_icon;
+    display: flex;
+    background-image: url("./../images/icons/close-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity $base_transition;
+  }
+}
+
+@media screen and (width < $breakpoint_desktop) {
+  .menu {
+    &__link {
+      padding: 12px;
+    }
+  }
+}
+
+@media screen and (width < $breakpoint_desktop) {
+  .menu {
+    &__list_footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (width < $breakpoint_tablet) {
+  .menu {
+    &__button-item {
+      display: flex;
+    }
+
+    &__list_header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_active {
+      padding: 20px;
+      max-height: $max_height_open_burger;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

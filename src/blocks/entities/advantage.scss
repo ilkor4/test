@@ -1,0 +1,39 @@
+.advantage {
+  width: $width_advantage;
+  padding: 17px 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: $color_primary_100_rgba;
+
+  &_left {
+    padding: 17px 10px 17px 0;
+  }
+
+  &_right {
+    padding: 17px 0 17px 10px;
+  }
+
+  &__title {
+    @include clear-paragraph;
+
+    font: $font_heading_3;
+    font-weight: 600;
+    color: $color_gray_700;
+  }
+
+  &__text {
+    @include clear-paragraph;
+
+    font: $font_regular_400;
+    color: $color_gray_500;
+    text-align: center;
+  }
+}
+
+@media screen and (width < $breakpoint_mobile) {
+  .advantage {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+.section-text {
+  @include clear-paragraph;
+
+  color: $color_gray_600;
+  font: $font_large_400;
+
+  &_optional {
+    display: inline-block;
+    margin-top: 16px;
+  }
+
+  &_light {
+    color: $color_gray_500;
+  }
+
+  &_gray {
+    color: $color_gray_400;
+  }
+
+  &_ideas {
+    max-width: $max_width_heading_text_ideas;
+    color: $color_gray_300;
+  }
+
+  &_blog {
+    color: $color_gray_400;
+    letter-spacing: -.6px;
+    line-height: 26px;
+  }
+}

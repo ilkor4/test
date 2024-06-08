@@ -1,0 +1,82 @@
+.social {
+  @include clear-list;
+
+  width: min-content;
+  display: flex;
+  background-color: $color_gray_white;
+  box-shadow: $social_box_shadow;
+  border-radius: 4px;
+
+  &_lead {
+    padding: 12px;
+    transform: translateY(-$height_social);
+  }
+
+  &_contacts {
+    gap: 12px;
+  }
+
+  &__icon {
+    padding: 15px;
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 4px;
+    transition: background-image $base_transition, background-color $base_transition;
+  }
+
+  &__icon:hover {
+    background-color: $color_primary_500;
+    box-shadow: $social_box-shadow;
+  }
+
+  &__icon_facebook {
+    background-image: url("./../images/icons/social/facebook-icon.svg");
+  }
+
+  &__icon_dribble {
+    background-image: url("./../images/icons/social/dribble-icon.svg");
+  }
+
+  &__icon_linkedin {
+    background-image: url("./../images/icons/social/linkid-icon.svg");
+  }
+
+  &__icon_inst {
+    background-image: url("./../images/icons/social/inst-icon.svg");
+  }
+
+  &__icon_behance {
+    background-image: url("./../images/icons/social/behance-icon.svg");
+  }
+
+  &__icon_facebook:hover {
+    background-image: url("./../images/icons/social/facebook-icon-white.svg");
+  }
+
+  &__icon_dribble:hover {
+    background-image: url("./../images/icons/social/dribble-icon-white.svg");
+  }
+
+  &__icon_linkedin:hover {
+    background-image: url("./../images/icons/social/linkid-icon-white.svg");
+  }
+
+  &__icon_inst:hover {
+    background-image: url("./../images/icons/social/inst-icon-white.svg");
+  }
+
+  &__icon_behance:hover {
+    background-image: url("./../images/icons/social/behance-icon-white.svg");
+  }
+
+  &__link {
+    @include clear-link;
+
+    width: $width_social_icon;
+    height: $height_social_icon;
+    display: flex;
+  }
+}

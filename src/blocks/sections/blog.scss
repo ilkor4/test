@@ -1,0 +1,32 @@
+.blog {
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $gradient_pink_down, $gradient_green;
+
+  &__container {
+    box-sizing: border-box;
+    max-width: $max_width_section;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__section-heading {
+    margin-bottom: 42px;
+    max-width: $max_width_heading_blog;
+    gap: 28px;
+  }
+}
+
+@media screen and (width < $breakpoint_desktop_wide) {
+  .blog {
+    &__container {
+      padding: 50px $base_padding 50px;
+    }
+  }
+}

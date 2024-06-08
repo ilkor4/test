@@ -1,0 +1,22 @@
+.cards {
+  @include clear-list;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media screen and (width < $breakpoint_desktop) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width < $breakpoint_mobile) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

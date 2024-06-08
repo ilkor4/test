@@ -1,0 +1,22 @@
+.clients {
+  padding: 100px 0;
+  box-sizing: border-box;
+  max-width: $max_width_section;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: $color_gray_white;
+
+  &__section-heading {
+    max-width: $max_width_heading_clients;
+    gap: 24px;
+  }
+}
+
+@media screen and (width < $breakpoint_desktop_wide) {
+  .clients {
+    padding: 50px $base_padding;
+  }
+}

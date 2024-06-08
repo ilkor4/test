@@ -1,0 +1,88 @@
+.step {
+  padding: 32px;
+  width: $width_step;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: $color_gray_white;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &_translated {
+    transform: translateY($height_translate_step);
+  }
+
+  &__icon {
+    width: $width_step_icon;
+    height: $height_step_icon;
+    background-color: $color_primary_100_rgba;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-image $base_transition, background-color $base_transition;
+    border-radius: 6px;
+
+    &_device {
+      background-image: url("./../images/icons/steps-icons/device-icon.svg");
+    }
+
+    &_graph {
+      background-image: url("./../images/icons/steps-icons/graph-icon.svg");
+    }
+
+    &_pencil {
+      background-image: url("./../images/icons/steps-icons/pencil-icon.svg");
+    }
+
+    &_notes {
+      background-image: url("./../images/icons/steps-icons/notes-icon.svg");
+    }
+  }
+
+  &__title {
+    @include clear-paragraph;
+
+    margin-top: 20px;
+    color: $color_gray_900;
+    font: $font_heading_5;
+    font-weight: 600;
+  }
+
+  &__text {
+    @include clear-paragraph;
+
+    color: $color_gray_600;
+    font: $font_regular_400;
+  }
+
+  &:hover {
+    box-shadow: $step_box_shadow;
+  }
+
+  &:hover &__icon {
+    background-color: $color_primary_500;
+  }
+
+  &:hover &__icon_device {
+    background-image: url("./../images/icons/steps-icons/device-icon-light.svg");
+  }
+
+  &:hover &__icon_graph {
+    background-image: url("./../images/icons/steps-icons/graph-icon-light.svg");
+  }
+
+  &:hover &__icon_pencil {
+    background-image: url("./../images/icons/steps-icons/pencil-icon-light.svg");
+  }
+
+  &:hover &__icon_notes{
+    background-image: url("./../images/icons/steps-icons/notes-icon-light.svg");
+  }
+}
+
+@media screen and (width < $breakpoint_tablet) {
+  .step {
+    &_translated {
+      transform: unset;
+    }
+  }
+}

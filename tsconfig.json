@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "es6",
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "paths": {
+      "*": [
+        "./src/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}

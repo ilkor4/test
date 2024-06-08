@@ -1,0 +1,16 @@
+.skills {
+  @include clear-list;
+
+  max-width: $max_width_skills;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+@media screen and (width < $breakpoint_desktop) {
+  .skills {
+    flex-shrink: 1;
+  }
+}
