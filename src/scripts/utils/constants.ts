@@ -1,3 +1,4 @@
+import carsImage from '../../images/cases/cars.png'
 import apertureImage from '../../images/cases/aperture.png'
 import cakesImage from '../../images/cases/cakes.png'
 import chessImage from '../../images/cases/chess.png'
@@ -19,6 +20,9 @@ import sassImage from '../../images/stack/sass-original.svg'
 import typeScriptImage from '../../images/stack/typescript.svg'
 import webpackImage from '../../images/stack/webpack-original.svg'
 import storyBookImage from '../../images/stack/storybook-original.svg'
+import reduxImage from '../../images/stack/redux-original.svg'
+import reactHookFormImage from '../../images/stack/react-hook-form-logo-only.svg'
+
 import {
     type DataNews,
     type DataPortfolio,
@@ -63,6 +67,13 @@ export const newsSelectors: NewsSelectors = {
 }
 
 export const dataCards: DataPortfolio[] = [
+    {
+        image: carsImage,
+        title: 'Космические автомобили',
+        subtitle: 'TypeScript / React / SCSS / Redux',
+        text: 'Сайт регистрации автомобилей',
+        link: 'https://github.com/ilkor4/stellar-cars'
+    },
     {
         image: dinamoImage,
         title: 'БК Динамо',
@@ -129,6 +140,18 @@ export const dataCards: DataPortfolio[] = [
 ]
 
 export const dataNews: DataNews[] = [
+    {
+        image: reactHookFormImage,
+        title: 'React Hook Form',
+        date: 'Март, 2024',
+        comments: ''
+    },
+    {
+        image: reduxImage,
+        title: 'Redux',
+        date: 'Февраль, 2024',
+        comments: ''
+    },
     {
         image: storyBookImage,
         title: 'StoryBook',

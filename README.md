@@ -1,7 +1,5 @@
-# 2024_front_vlg_korneluk_ilya
-
 <h1 align="center">Сайт-портфолио Корнелюка Ильи</h1>
-
+ 
 ---
 
 <img src="./src/images/screen-image.jpg" alt="Сайт Динамо"/>
@@ -12,7 +10,7 @@
 
 - конфигурация `webpack` на typeScript
 - рендеринг компонентов через массивы данных
-- автоматический прогон тестов через `gitlab actions`
+- автоматический прогон тестов и деплой через `github actions`
 - стилизация по `БЭМ`
 - глобальные переменные стилей и миксины `global.scss, mixin.scss`
 - компоненты `card.js, news.js`
@@ -28,6 +26,7 @@
   <img id="stack-img" src="./src/images/stack/css3-original.svg" title="CSS3" alt="CSS3" width="50px" height="50px" >
   <img id="stack-img" src="./src/images/stack/sass-original.svg" title="Sass\Scss" alt="Sass\Scss" width="50px" height="50px" />
   <img id="stack-img" src="./src/images/stack/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50px" height="50px" />
+  <img id="stack-img" src="./src/images/stack/typescript.svg" title="TypeScript" alt="TypeScript" width="50px" height="50px" />
   <img id="stack-img" src="./src/images/stack/webpack-original.svg" title="Webpack" alt="Webpack" width="50px" height="50px" />
   <img id="stack-img" src="./src/images/stack/git-original.svg" title="Git" alt="Git" width="50px" height="50px" />
 </div>
@@ -36,7 +35,7 @@
 
 ---
 
-- `.github` — директория с gitlab actions
+- `.github` — директория с github actions
 - `config` — директория с конфигом webpack
 - `dist` — директория с production сборкой
 - `src` — директория с архитектурой проекта
@@ -84,8 +83,7 @@
 
 ---
 
-- `Адрес репозитория:` https://gitlab.com/aleksandr-z/2024_front_vlg_korneluk_ilya
-- `Деплой:` https://2024-front-vlg-korneluk-ilya-aleksandr-z-62076e31bbad3940eb1019.gitlab.io
-- `Деплой гитхаб:` https://ilkor4.github.io/portfolio
+- `Адрес репозитория:` https://github.com/ilkor4/portfolio
+- `Деплой:` https://ilkor4.ru
 - `Над проектом работал:` https://github.com/ilkor4
 
