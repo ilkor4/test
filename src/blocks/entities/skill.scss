@@ -7,6 +7,7 @@
   gap: 16px;
   background-color: $color_gray_white;
   border-radius: 6px;
+  border-left: 0 solid $color_primary_500;
   transition: $base_transition;
 
   &__title {

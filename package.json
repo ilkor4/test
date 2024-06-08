@@ -15,8 +15,8 @@
     "lint:html": "linthtml \"src/*.html\" --config .linthtmlrc",
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
-    "lint:js": "eslint \"**/*.js\"",
-    "lint:js:fix": "eslint \"**/*.js\" --fix",
+    "lint:ts": "eslint \"**/*.ts\"",
+    "lint:ts:fix": "eslint \"**/*.ts\" --fix",
     "lint": "npm run lint:html && npm run lint:scss && npm run lint:js"
   },
   "keywords": [],

@@ -4,7 +4,7 @@ import path from 'path'
 
 const paths: BuildPaths = {
     src: path.resolve(__dirname, 'src'),
-    entry: path.resolve(__dirname, 'src', 'pages', 'index.js'),
+    entry: path.resolve(__dirname, 'src', 'pages', 'index.ts'),
     build: path.resolve(__dirname, 'public'),
     html: path.resolve(__dirname, 'src', 'index.html'),
     nodeModules: path.resolve(__dirname, 'node_modules')

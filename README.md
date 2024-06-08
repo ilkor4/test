@@ -64,8 +64,8 @@
 - `npm run build:dev` - сборка проекта в `dev` режиме;
 - `npm run lint:html` - запуск линтнера для HTML;
 - `npm run lint:markup` - запуск линтнера для разметки`;
-- `npm run lint:js` - запуск линтнера для JavaScript`;
-- `npm run lint:js:fix` - исправление ошибок линтнера для `JavaScript`;
+- `npm run lint:ts` - запуск линтнера для TypeScript`;
+- `npm run lint:ts:fix` - исправление ошибок линтнера для `TypeScript`;
 - `npm run lint:scss` - запуск линтнера для `SCSS`;
 - `npm run lint:scss:fix` - исправление ошибок линтнера для `SCSS`;
 
@@ -78,6 +78,7 @@
 - `release/1.0.0` - ветка с релизом сайта с шаблонным контентом под PixelPerfect
 - `release/2.0.0` - ветка с релизом сайта с заполненным контентом
 - `release/3.0.0` - ветка с релизом сайта с пагинацией секции блог
+- `release/4.0.0` - ветка с релизом сайта на TypeScript
 
 ## Ссылки на проект:
 
